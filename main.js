@@ -19,6 +19,18 @@ console.log(a);
 
 // 程式內的 = 指定符號
 // 右邊先執行在指定給左邊
-a=a+1; 
+a=a%3; 
 
 console.log(a);
+
+// HTML5，CSS3，JS ES6
+// ++ 遞增1 -- 遞減1
+var e = 7;
+e++;
+console.log(e);
+
+// ES6 指數符號 **
+var f = 5;
+f = f**3;
+console.log(f); 
+

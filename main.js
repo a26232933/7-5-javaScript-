@@ -191,3 +191,71 @@ score.onchange=() =>{
     }
     
 }
+
+// 迴圈 for
+// 語法
+// for (初始值; 條件-布林值; 迭代器-迴圈結束會執行的區塊) {}
+
+// 初始值：迴圈開始的值
+// 條　件：迴圈會執行的條件 - 當條件為 true 執行，false 結束迴圈
+// 迭代器：初始值處理 - 遞增 ++
+
+for (let i = 0; i < 100; i++) {
+    console.log("迴圈：" + i);
+}
+
+// 陣列
+var products = ["冰美式", "卡布奇諾", "摩卡"];
+
+// products.length 陣列.長度(數量) 3
+
+for (let i = 0; i < products.length; i++) {
+    console.log(products[i]);
+}
+
+// 透過類別取得複數元素 - 結果為陣列
+var ps = document.getElementsByClassName("product");
+
+console.log(ps);
+
+for (let i = 0; i < ps.length; i++) {
+    ps[i].innerText = products[i];
+}
+
+/// 常數 const constant
+// 不能變更
+const pi = 3.14159;
+
+// pi = 4.123456;
+// pi = pi + 10;
+
+// let 與 var 差異
+// let 在同樣的區塊內不能重複 - 安全
+// 只在區塊內有效
+
+var countA = 10;
+var countA = 7;
+// let countA = 5; // 重複瀏覽器顯示錯誤
+
+{
+    let countA = 5;
+    console.log(countA);
+}
+
+console.log(countA);
+
+var countB = 99;
+
+{
+    var countB= 77;
+}
+
+console.log(countB);
+
+let countC = 99;
+
+{
+    let countC = 77;
+}
+
+console.log(countC);
